@@ -21,16 +21,16 @@ var ruleTester = new RuleTester();
 ruleTester.run("robber-language", rule, {
 
     valid: [
-
-        // give me some code that won't trigger a warning
+        "var fofoo;",
+        "var fofoo, bobaror;",
     ],
 
     invalid: [
         {
             code: "var foo;",
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "Variable names must be in robber language.",
+                type: "VariableDeclaration"
             }]
         }
     ]
