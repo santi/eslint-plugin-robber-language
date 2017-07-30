@@ -5,7 +5,8 @@
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "robber-language"
   ],
   "author": "Vemund Santi",
   "main": "lib/index.js",

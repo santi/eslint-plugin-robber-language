@@ -10,17 +10,13 @@ This rule aims to...
 Examples of **incorrect** code for this rule:
 
 ```js
-
-// fill me in
-
+var foo;
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-// fill me in
-
+var fofoo;
 ```
 
 ### Options
