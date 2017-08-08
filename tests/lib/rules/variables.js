@@ -37,7 +37,7 @@ ruleTester.run("variables", rule, {
       code: "var foo;",
       errors: [
         {
-          message: "Variable names must be in robber language.",
+          message: "Variable name must be in robber language.",
           type: "VariableDeclaration"
         }
       ]
@@ -46,7 +46,7 @@ ruleTester.run("variables", rule, {
       code: "let foo;",
       errors: [
         {
-          message: "Variable names must be in robber language.",
+          message: "Variable name must be in robber language.",
           type: "VariableDeclaration"
         }
       ]
@@ -55,7 +55,7 @@ ruleTester.run("variables", rule, {
       code: "const foo = 'bar';",
       errors: [
         {
-          message: "Variable names must be in robber language.",
+          message: "Variable name must be in robber language.",
           type: "VariableDeclaration"
         }
       ]
