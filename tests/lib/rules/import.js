@@ -28,6 +28,7 @@ ruleTester.run("import", rule, {
 
   valid: [
     "import fofoo from 'bar';",
+    "import { fofoo } from 'bar';",
     "import { foo as fofoo } from 'bar';",
     "import { default as dodefofauloltot } from 'bar';"
   ],
