@@ -1,14 +1,18 @@
 {
   "name": "eslint-plugin-robber-language",
-  "version": "0.0.0",
-  "description": "Checks that all variable declarations are typed correctly in robber language",
+  "version": "1.0.0",
+  "description": "Linting rules for Robber Language",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin",
     "robber-language"
   ],
-  "author": "Vemund Santi",
+  "author": "Vemund Santi <vemund@santi.no>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santi/eslint-plugin-robber-language"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
@@ -23,5 +27,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
