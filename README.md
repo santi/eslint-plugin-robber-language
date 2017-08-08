@@ -1,6 +1,14 @@
 # eslint-plugin-robber-language
 
-Checks that all variable declarations are typed correctly in robber language
+Robber Language is a secret code language made popular in the books about
+Kalle Blomkvist (Eng: Bill Bergson) by Astrid Lindgren in the 1940s and 1950s.
+
+The Robber Language is spoken by robbers, where every consonant is
+doubled, with an 'o' added in-between. This provides for a code language that
+is quick and easy to learn, but hard for an untrained ear to understand.
+
+This plugin provides linting rules so that robbers are able to write their
+code without anyone else understanding it.
 
 ## Installation
 
@@ -36,16 +44,24 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "robber-language/rule-name": 2
+        "robber-language/rule-name": "warn"
     }
 }
 ```
 
-## Supported Rules
+### Supported Rules
 
-* Fill in provided rules here
+* `robber-language/variables`
 
+## Recommended configuration
 
+This plugin also exports a set of recommended configuration options for the rules.
+To use the recommended configuration, add the following under the extends section.
 
-
-
+```json
+{
+  "extends": {
+    "plugin:robber-language/recommended"
+  }
+}
+```
