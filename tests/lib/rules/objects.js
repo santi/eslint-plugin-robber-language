@@ -22,7 +22,9 @@ ruleTester.run("objects", rule, {
 
   valid: [
     "var a = { fofoo: 'bar' };",
-    "var a = { fofoo: 'bar', bobaror: 'foo' };"
+    "var a = { fofoo: 'bar', bobaror: 'foo' };",
+    "var a = { 1: 'foo' };",
+    "var a = { 1: 'foo', fofoo: 'bar' };"
   ],
 
   invalid: [
@@ -35,6 +37,13 @@ ruleTester.run("objects", rule, {
     },
     {
       code: "var a = { fofoo: 'bar', bar: 'foo' };",
+      errors: [{
+        message: "Object properties must be in robber language.",
+        type: "Property"
+      }]
+    },
+    {
+      code: "var a = { foo1: 'bar' };",
       errors: [{
         message: "Object properties must be in robber language.",
         type: "Property"
