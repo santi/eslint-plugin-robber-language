@@ -44,7 +44,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "robber-language/rule-name": "warn"
+        "robber-language/variables": "warn"
     }
 }
 ```
@@ -52,6 +52,9 @@ Then configure the rules you want to use under the rules section.
 ### Supported Rules
 
 * `robber-language/variables`
+* `robber-language/functions`
+* `robber-language/objects`
+* `robber-language/import`
 
 ## Recommended configuration
 
@@ -65,3 +68,11 @@ To use the recommended configuration, add the following under the extends sectio
   }
 }
 ```
+
+## Fixing
+
+All rules support automatic fixing of linting errors. To automatically fix the errors,
+apply the `--fix` flag when using `eslint` from the command line.
+
+**Warning:**  Automatic fixing only fixes declaration errors. Identifiers used
+at a later point are not touched. 
